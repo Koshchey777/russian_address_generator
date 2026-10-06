@@ -59,7 +59,7 @@ async def lifespan(app: FastAPI):
     """Загрузка данных при старте, очистка при остановке"""
     logger.info("Загрузка данных адресов...")
     try:
-        data_path = Path(__file__).parent / "data" / "address.json"
+        data_path = Path(__file__).parent / "address.json"
         with open(data_path, 'r', encoding='utf-8') as f:
             loaded_data = json.load(f)
 

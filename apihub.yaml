@@ -1,0 +1,37 @@
+name: russian-address-generator
+version: 2.0.0
+description: Генератор реалистичных российских адресов с валидными индексами
+author: Ваш GitHub ник
+license: MIT
+
+endpoints:
+  - path: /generate
+    method: POST
+    description: Генерация адресов
+
+  - path: /cities
+    method: GET
+    description: Список городов
+
+  - path: /
+    method: GET
+    description: Информация об API
+
+pricing:
+  free_tier:
+    requests_per_day: 100
+    max_addresses_per_request: 10
+
+  pro_tier:
+    price: 499
+    currency: RUB
+    period: month
+    requests_per_month: 10000
+    max_addresses_per_request: 100
+
+  business_tier:
+    price: 2999
+    currency: RUB
+    period: month
+    requests_per_month: 100000
+    max_addresses_per_request: 1000
