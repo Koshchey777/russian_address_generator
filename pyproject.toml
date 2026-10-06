@@ -1,0 +1,25 @@
+[project]
+name = "generatoradress"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Василий Вихрь",email = "koshchey777@gmail.com"}
+]
+requires-python = "^3.14"
+dependencies = [
+    "fastapi (>=0.142.2,<0.143.0)",
+    "uvicorn (>=0.54.0,<0.55.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+lint = [
+    "black (>=26.5.1,<27.0.0)",
+    "flake8 (>=7.4.1,<8.0.0)",
+    "mypy (>=2.4.0,<3.0.0)",
+    "isort (>=9.0.2,<10.0.0)"
+]
